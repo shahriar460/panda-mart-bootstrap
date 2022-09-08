@@ -11,7 +11,7 @@
 <body>
     <header class="container">
         <!-- nav-bar-start  -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
               <a class="navbar-brand" href="#">      
                 <img src="images/logo.png" alt="" >
@@ -23,13 +23,13 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Shoes</a>
+                    <a class="nav-link" href="#Shoes">Shoes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Backpack</a>
+                    <a class="nav-link" href="#Backpack" tabindex="-1" aria-disabled="true">Backpack</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Subscribe</a>
+                    <a class="nav-link" href="#Subscribe" tabindex="-1" aria-disabled="true">Subscribe</a>
                   </li>
                 </ul>
               </div>
@@ -126,7 +126,7 @@
      </section>
     <!-- catagories End -->
     <!-- shoes section start  -->
-     <section class="container">
+     <section class="container" id="Shoes">
       <h2>Shoes</h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <div class="col">
@@ -171,8 +171,8 @@
       </div>
      </section>
      <!-- shoes section End  -->
-     <!-- bagpack section start  -->
-     <section class="container mt-5">
+     <!-- backpack section start  -->
+     <section class="container my-5" id="Backpack">
       <h2>Backpack</h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <div class="col">
@@ -216,12 +216,22 @@
         </div>
       </div>
      </section>
-     
-
+      <!-- Backpack section start  -->
+      <!-- subscribe section start  -->
+      <section style="height: 300px;"  class="container d-flex justify-content-center bg-info align-items-center rounded-3" id="Subscribe">
+        <div>
+          <h1>LET'S STAY IN TOUCH</h1>
+        <p>Get updates on sales, specials and more</p>
+        <input type="text" placeholder="Email">
+        <br>
+        <div class="btn bnt btn-warning">SUBMIT</div>
+        </div>  
+      </section>
+      <!-- subscribe section End  -->
 
     </main>
-    <footer>
-
+    <footer class="mt-5 text-center">
+      <p><small>©2022. Panda mart. All rights reserved. Sofia, Bulgaria.</small></p>
     </footer>
     <!-- bootstrap-script-link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
